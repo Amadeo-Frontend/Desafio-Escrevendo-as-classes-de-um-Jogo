@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./img/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    display: block;
+    float: left;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+input,
+select,
+button {
+    margin-top: 5px;
+    padding: 8px;
+    width: 90%;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#saida {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(238, 15, 15, 0.742);
+    border-radius: 4px;
+}
+
+/* Adicionando animações específicas para cada tipo de ataque */
+@keyframes magiaAnimation {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes espadaAnimation {
+    0% {
+        transform: rotate(45deg) scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes artesMarciaisAnimation {
+    0% {
+        transform: rotate(-90deg) scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes shurikenAnimation {
+    0% {
+        transform: rotate(-180deg) scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Aplicando animações específicas para cada tipo de ataque */
+#saida.mago {
+    animation: magiaAnimation 1s ease-in-out;
+}
+
+#saida.guerreiro {
+    animation: espadaAnimation 1s ease-in-out;
+}
+
+#saida.monge {
+    animation: artesMarciaisAnimation 1s ease-in-out;
+}
+
+#saida.ninja {
+    animation: shurikenAnimation 1s ease-in-out;
+}

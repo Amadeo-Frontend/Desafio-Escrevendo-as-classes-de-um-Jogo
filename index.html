@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script defer src="script.js"></script>
+    <title>Jogo de Aventura</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Jogo de Aventura</h1>
+
+      <label for="nomeInput">Nome do Herói:</label>
+      <input type="text" id="nomeInput" placeholder="Digite o nome" />
+      <p id="nome" class="info"></p>
+
+      <label for="idadeInput">Idade do Herói:</label>
+      <input type="number" id="idadeInput" placeholder="Digite a idade" />
+      <p id="idade" class="info"></p>
+
+      <label for="tipo">Tipo do Herói:</label>
+      <select id="tipo">
+        <option value="mago">Mago</option>
+        <option value="guerreiro">Guerreiro</option>
+        <option value="monge">Monge</option>
+        <option value="ninja">Ninja</option>
+      </select>
+
+      <button onclick="criarEAtacarHeroi()">Criar e Atacar</button>
+
+      <div id="saida" class="saida"></div>
+    </div>
+    <script src="./src/main.js"></script>
+  </body>
+</html>
