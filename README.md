@@ -1,4 +1,4 @@
-# Calculadora de Partidas Ranqueadas
+# Desafio - Escrevendo classes de um jogo
 
 Bem-vindo ao Jogo de Aventura, um projeto interativo desenvolvido em HTML, CSS e JavaScript. Este jogo permite criar heróis e vê-los em ação, realizando ataques personalizados com animações distintas. Aqui estão os principais pontos sobre a implementação em JavaScript:
 
@@ -34,3 +34,4 @@ Este projeto oferece uma experiência simples e divertida de criação e ação 
 faça baseado nesse projeo
 
 ## Live
+<https://desafio-escrevendo-as-classes-de-um-jogo.vercel.app/>
